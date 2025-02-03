@@ -9,7 +9,8 @@
 "               
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""               
 
-" test edit
+" REMEMBER TO CREATE LINK IN HOME DIRECTORY ON NEW MACHINE
+" ln -s ~/vimrc-repo/.vimrc ~/.vimrc
 
 if has('unnamedplus')
     set clipboard=unnamedplus
