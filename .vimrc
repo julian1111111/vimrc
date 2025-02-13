@@ -24,6 +24,10 @@ nnoremap L $
 nnoremap H ^
 nnoremap J }
 nnoremap K {
+vnoremap J }
+vnoremap K {
+vnoremap L $
+vnoremap H ^
 nnoremap <space> :
 colorscheme slate
 
