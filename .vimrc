@@ -20,6 +20,8 @@ endif
 xnoremap p "_dP
 xnoremap P "_dP
 inoremap jk <Esc>
+nnoremap <C-,> <C-x>
+nnoremap <C-.> <C-a>
 nnoremap L $
 nnoremap H ^
 nnoremap J }
