@@ -19,7 +19,9 @@ else
 endif
 xnoremap p "_dP
 xnoremap P "_dP
+nnoremap U <C-r>
 inoremap jk <Esc>
+vnoremap jk <Esc>
 nnoremap <C-,> <C-x>
 nnoremap <C-.> <C-a>
 nnoremap L $
