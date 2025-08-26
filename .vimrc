@@ -10,7 +10,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""               
 
 " REMEMBER TO CREATE LINK IN HOME DIRECTORY ON NEW MACHINE
-" ln -s ~/vimrc-repo/.vimrc ~/.vimrc
+" ln -s ~/vimrc/.vimrc ~/.vimrc
 
 if has('unnamedplus')
     set clipboard=unnamedplus
@@ -30,7 +30,7 @@ nnoremap J }
 nnoremap K {
 vnoremap J }
 vnoremap K {
-vnoremap L $
+vnoremap L c
 vnoremap H ^
 nnoremap <space> :
 colorscheme slate
