@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""               
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "               
 "               ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
 "               ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
@@ -7,7 +7,7 @@
 "                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 "               
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""               
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " REMEMBER TO CREATE LINK IN HOME DIRECTORY ON NEW MACHINE
 " ln -s ~/vimrc/.vimrc ~/.vimrc
@@ -35,7 +35,15 @@ vnoremap H ^
 nnoremap <space> :
 colorscheme slate
 
-" Turn syntax highlighting on.
+" Prefer guicursor if supported by the terminal
+set guicursor=n-v-c:block,i-ci:ver25,r-cr:hor20
+
+" Fallback for terminals that ignore 'guicursor':
+" Use VT escape codes: bar in Insert, block otherwise
+if exists('&t_SI')
+  let &t_SI = "\e[6 q"  " steady bar in insert
+  let &t_EI = "\e[2 q"  " steady block when leaving insert
+endif" Turn syntax highlighting on.
 syntax on
 
 " Set shift width to 4 spaces.
