@@ -30,7 +30,7 @@ nnoremap J }
 nnoremap K {
 vnoremap J }
 vnoremap K {
-vnoremap L c
+vnoremap L $
 vnoremap H ^
 nnoremap <space> :
 colorscheme slate
